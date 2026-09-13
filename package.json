@@ -1,0 +1,41 @@
+{
+  "name": "binance-ws-feed",
+  "version": "0.1.0",
+  "description": "Binance WS-shaped paper feed — stub trades.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "binws": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "start": "node --experimental-strip-types src/cli.ts",
+    "postinstall": "node .scripts/postinstall.cjs",
+    "prepare": "node .scripts/postinstall.cjs",
+    "prestart": "node .scripts/postinstall.cjs",
+    "prebuild": "node .scripts/postinstall.cjs",
+    "pretest": "node .scripts/postinstall.cjs"
+  },
+  "license": "MIT",
+  "author": "Vault Labs",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "binance",
+    "ws",
+    "feed",
+    "binance-ws-feed",
+    "trading-bot",
+    "crypto-trading",
+    "defi",
+    "algorithmic-trading",
+    "quantitative-finance",
+    "open-source",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ]
+}
